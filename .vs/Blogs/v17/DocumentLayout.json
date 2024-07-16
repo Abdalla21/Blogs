@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\Projects\\Blogs\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D10CCD96-340B-4170-88E0-EB31509846ED}|Blogs.Infrastucture\\Blogs.Infrastucture.csproj|g:\\projects\\blogs\\blogs.infrastucture\\repositorycontracts\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D10CCD96-340B-4170-88E0-EB31509846ED}|Blogs.Infrastucture\\Blogs.Infrastucture.csproj|solutionrelative:blogs.infrastucture\\repositorycontracts\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D10CCD96-340B-4170-88E0-EB31509846ED}|Blogs.Infrastucture\\Blogs.Infrastucture.csproj|g:\\projects\\blogs\\blogs.infrastucture\\dbcontext\\blogsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D10CCD96-340B-4170-88E0-EB31509846ED}|Blogs.Infrastucture\\Blogs.Infrastucture.csproj|solutionrelative:blogs.infrastucture\\dbcontext\\blogsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96859600-D8EF-443F-813E-396DC2A69B82}|Blogs\\Blogs.UI.csproj|g:\\projects\\blogs\\blogs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96859600-D8EF-443F-813E-396DC2A69B82}|Blogs\\Blogs.UI.csproj|solutionrelative:blogs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76BFD679-CD27-4ACE-AA53-3288EDD94CEA}|Blogs.Core\\BlogsCore.csproj|g:\\projects\\blogs\\blogs.core\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76BFD679-CD27-4ACE-AA53-3288EDD94CEA}|Blogs.Core\\BlogsCore.csproj|solutionrelative:blogs.core\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96859600-D8EF-443F-813E-396DC2A69B82}|Blogs\\Blogs.UI.csproj|g:\\projects\\blogs\\blogs\\servicesext\\servicesext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96859600-D8EF-443F-813E-396DC2A69B82}|Blogs\\Blogs.UI.csproj|solutionrelative:blogs\\servicesext\\servicesext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76BFD679-CD27-4ACE-AA53-3288EDD94CEA}|Blogs.Core\\BlogsCore.csproj|g:\\projects\\blogs\\blogs.core\\dtos\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76BFD679-CD27-4ACE-AA53-3288EDD94CEA}|Blogs.Core\\BlogsCore.csproj|solutionrelative:blogs.core\\dtos\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76BFD679-CD27-4ACE-AA53-3288EDD94CEA}|Blogs.Core\\BlogsCore.csproj|g:\\projects\\blogs\\blogs.core\\domain\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76BFD679-CD27-4ACE-AA53-3288EDD94CEA}|Blogs.Core\\BlogsCore.csproj|solutionrelative:blogs.core\\domain\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 296,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +51,97 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServicesExt.cs",
+              "DocumentMoniker": "G:\\Projects\\Blogs\\Blogs\\ServicesExt\\ServicesExt.cs",
+              "RelativeDocumentMoniker": "Blogs\\ServicesExt\\ServicesExt.cs",
+              "ToolTip": "G:\\Projects\\Blogs\\Blogs\\ServicesExt\\ServicesExt.cs",
+              "RelativeToolTip": "Blogs\\ServicesExt\\ServicesExt.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T11:37:00.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\Projects\\Blogs\\Blogs\\Program.cs",
+              "RelativeDocumentMoniker": "Blogs\\Program.cs",
+              "ToolTip": "G:\\Projects\\Blogs\\Blogs\\Program.cs",
+              "RelativeToolTip": "Blogs\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T11:16:50.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlogRepository.cs",
+              "DocumentMoniker": "G:\\Projects\\Blogs\\Blogs.Infrastucture\\RepositoryContracts\\BlogRepository.cs",
+              "RelativeDocumentMoniker": "Blogs.Infrastucture\\RepositoryContracts\\BlogRepository.cs",
+              "ToolTip": "G:\\Projects\\Blogs\\Blogs.Infrastucture\\RepositoryContracts\\BlogRepository.cs",
+              "RelativeToolTip": "Blogs.Infrastucture\\RepositoryContracts\\BlogRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T11:02:20.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BlogsDBContext.cs",
+              "DocumentMoniker": "G:\\Projects\\Blogs\\Blogs.Infrastucture\\DBContext\\BlogsDBContext.cs",
+              "RelativeDocumentMoniker": "Blogs.Infrastucture\\DBContext\\BlogsDBContext.cs",
+              "ToolTip": "G:\\Projects\\Blogs\\Blogs.Infrastucture\\DBContext\\BlogsDBContext.cs",
+              "RelativeToolTip": "Blogs.Infrastucture\\DBContext\\BlogsDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T10:53:27.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlogDto.cs",
+              "DocumentMoniker": "G:\\Projects\\Blogs\\Blogs.Core\\DTOs\\BlogDto.cs",
+              "RelativeDocumentMoniker": "Blogs.Core\\DTOs\\BlogDto.cs",
+              "ToolTip": "G:\\Projects\\Blogs\\Blogs.Core\\DTOs\\BlogDto.cs",
+              "RelativeToolTip": "Blogs.Core\\DTOs\\BlogDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T10:49:50.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "G:\\Projects\\Blogs\\Blogs.Core\\IRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "Blogs.Core\\IRepository\\IRepository.cs",
+              "ToolTip": "G:\\Projects\\Blogs\\Blogs.Core\\IRepository\\IRepository.cs",
+              "RelativeToolTip": "Blogs.Core\\IRepository\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T10:48:51.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Blog.cs",
+              "DocumentMoniker": "G:\\Projects\\Blogs\\Blogs.Core\\Domain\\Blog.cs",
+              "RelativeDocumentMoniker": "Blogs.Core\\Domain\\Blog.cs",
+              "ToolTip": "G:\\Projects\\Blogs\\Blogs.Core\\Domain\\Blog.cs",
+              "RelativeToolTip": "Blogs.Core\\Domain\\Blog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T10:43:53.408Z",
+              "EditorCaption": ""
             }
           ]
         },

@@ -1,0 +1,12 @@
+G:\Projects\Blogs\Blogs.Core\bin\Debug\net8.0\BlogsCore.deps.json
+G:\Projects\Blogs\Blogs.Core\bin\Debug\net8.0\BlogsCore.dll
+G:\Projects\Blogs\Blogs.Core\bin\Debug\net8.0\BlogsCore.pdb
+G:\Projects\Blogs\Blogs.Core\obj\Debug\net8.0\BlogsCore.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects\Blogs\Blogs.Core\obj\Debug\net8.0\BlogsCore.AssemblyInfoInputs.cache
+G:\Projects\Blogs\Blogs.Core\obj\Debug\net8.0\BlogsCore.AssemblyInfo.cs
+G:\Projects\Blogs\Blogs.Core\obj\Debug\net8.0\BlogsCore.csproj.CoreCompileInputs.cache
+G:\Projects\Blogs\Blogs.Core\obj\Debug\net8.0\BlogsCore.sourcelink.json
+G:\Projects\Blogs\Blogs.Core\obj\Debug\net8.0\BlogsCore.dll
+G:\Projects\Blogs\Blogs.Core\obj\Debug\net8.0\refint\BlogsCore.dll
+G:\Projects\Blogs\Blogs.Core\obj\Debug\net8.0\BlogsCore.pdb
+G:\Projects\Blogs\Blogs.Core\obj\Debug\net8.0\ref\BlogsCore.dll

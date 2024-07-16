@@ -1,19 +1,21 @@
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Identity.Abstractions;
-using Microsoft.Identity.Web;
-using Microsoft.Identity.Web.Resource;
+using Blogs.Infrastucture.Extensions;
+using Blogs.UI.ServicesExt;
+using BlogsCore.Domain;
+using BlogsCore.DTOs;
+using BlogsCore.IRepository;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("AzureAd"));
-builder.Services.AddAuthorization();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCorsService();
+
+ConfigurationManager configuration = builder.Configuration;
+
+builder.Services.AddDBContextService(configuration);
+builder.Services.AddBlogRepo();
 
 var app = builder.Build();
 
@@ -26,33 +28,40 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var scopeRequiredByApi = app.Configuration["AzureAd:Scopes"] ?? "";
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+app.UseCors();
 
-app.MapGet("/weatherforecast", (HttpContext httpContext) =>
+app.MapGet("/GetBlog", (HttpContext httpContext, [FromServices] IRepository repo, [FromQuery] Guid id) =>
 {
-    httpContext.VerifyUserHasAnyAcceptedScope(scopeRequiredByApi);
+    return repo.GetBlog(id);
 
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
 })
-.WithName("GetWeatherForecast")
-.WithOpenApi()
-.RequireAuthorization();
+.WithOpenApi();
+
+app.MapPost("/CreateBlog", (HttpContext httpContext,[FromServices] IRepository repo, [FromBody] BlogDto dto) =>
+{
+    Blog b = dto.ToBlog();
+
+    return repo.CreateBlog(b);
+})
+.WithOpenApi();
+
+app.MapPut("/UpdateBlog", (HttpContext httpContext, [FromServices] IRepository repo, [FromQuery] Guid id, [FromBody] BlogDto dto) =>
+{
+    Blog blog = new Blog();
+    blog.ID = id;
+    blog.Name = dto.Name;
+    blog.Description = dto.Desc;
+
+    repo.UpdateBlog(blog);
+})
+.WithOpenApi();
+
+app.MapDelete("/DeleteBlog", (HttpContext httpContext, [FromServices] IRepository repo, [FromQuery] Guid id) =>
+{
+    repo.DeleteBlog(id);
+})
+.WithOpenApi();
+
 
 app.Run();
 
-internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
